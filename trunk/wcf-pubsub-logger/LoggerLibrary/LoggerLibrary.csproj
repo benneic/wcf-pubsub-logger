@@ -48,9 +48,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LoggerService.cs" />
+    <Compile Include="DataContracts\Logger.cs" />
+    <Compile Include="LoggerPublishService.cs" />
+    <Compile Include="LoggerSubscriptionService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceContracts\ILogger.cs" />
+    <Compile Include="ServiceContracts\ILoggerSubscriptionService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

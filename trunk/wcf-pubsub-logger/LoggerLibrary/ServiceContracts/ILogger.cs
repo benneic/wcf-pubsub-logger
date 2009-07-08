@@ -4,22 +4,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using ServiceModelEx;
+using LoggerLibrary.DataContracts;
 
 namespace LoggerLibrary.ServiceContracts
 {
+    [ServiceContract]
     public interface ILogger
     {
         [OperationContract(IsOneWay = true)]
-        bool LoggingEvent(int instrumentId, DateTime dateStart, DateTime dateEnd);
+        void LoggingEvent(Logger.LogLevels level, DateTime timeStamp, string processName, string moduleName, string methodName, string details);
 
         [OperationContract(IsOneWay = true)]
-        bool StatisticEvent(int instrumentId, DateTime dateStart, DateTime dateEnd);
+        void StatisticEvent(Logger.StatisticType type, DateTime timeStamp, string processName, string moduleName, string stasticName, object statisticValue);
 
         [OperationContract(IsOneWay = true)]
-        bool CounterEvent(int instrumentId, DateTime dateStart, DateTime dateEnd);
-    }
-
-    [ServiceContract(CallbackContract = typeof(ILogger))]
-    public interface ILoggerService : ISubscriptionService
-    { }
+        void CounterEvent(string processName, string counterGroupName, string counterName);
+    }   
 }
