@@ -8,10 +8,10 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("LoggerLibrary")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("AlgoBox Ltd")]
 [assembly: AssemblyProduct("LoggerLibrary")]
-[assembly: AssemblyCopyright("Copyright ©  2009")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCopyright("Copyright AlgoBox Ltd ©  2009")]
+[assembly: AssemblyTrademark("AlgoBox")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
