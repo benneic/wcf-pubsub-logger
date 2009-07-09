@@ -9,7 +9,7 @@ using LoggerLibrary.ServiceContracts;
 namespace LoggerLibrary
 {
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall)]
-    class LoggerPublishService : PublishService<ILogger> , ILogger
+    public class LoggerPublishService : PublishService<ILogger> , ILogger
     {
 
         #region ILogger Members
