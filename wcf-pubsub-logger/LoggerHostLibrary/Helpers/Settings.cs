@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Configuration;
 
-namespace LoggerLibrary.Helpers
+namespace LoggerHostLibrary.Helpers
 {
     public class Settings
     {

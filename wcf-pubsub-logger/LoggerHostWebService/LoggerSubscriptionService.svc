@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="LoggerLibrary.LoggerSubscriptionService" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="LoggerHostLibrary.LoggerSubscriptionService" %>

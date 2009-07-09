@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://liqtest01.options-it.com/PubSubLogger/LoggerSubscriptionService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/LoggerLibrary.DataContracts" />
+  <xs:element name="Subscribe">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="eventOperation" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubscribeResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Unsubscribe">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="eventOperation" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnsubscribeResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoggingEvent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/LoggerLibrary.DataContracts" minOccurs="0" name="level" type="q1:Logger.LogLevels" />
+        <xs:element minOccurs="0" name="timeStamp" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="processName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="subProcessName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="logCategory" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="logMessage" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StatisticEvent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/LoggerLibrary.DataContracts" minOccurs="0" name="type" type="q2:Logger.StatisticType" />
+        <xs:element minOccurs="0" name="timeStamp" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="processName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="subProcessName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="stasticCategory" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="stasticName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="statisticValue" nillable="true" type="xs:anyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CounterEvent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="processName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="subProcessName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="counterCategory" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="counterName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

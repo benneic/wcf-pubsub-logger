@@ -4,28 +4,32 @@ using System.Linq;
 using System.Text;
 using System.ServiceModel;
 using ServiceModelEx;
-using LoggerLibrary.ServiceContracts;
+using LoggerHostLibrary.ServiceContracts;
+using LoggerHostLibrary.DataContracts;
 
-namespace LoggerLibrary
+namespace LoggerHostLibrary
 {
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall)]
     public class LoggerPublishService : PublishService<ILogger> , ILogger
     {
         #region ILogger Members
 
-        public void LoggingEvent(LoggerLibrary.DataContracts.Logger.LogLevels level, DateTime timeStamp, string processName, string subProcessName, string logCategory, string logMessage)
+        public void LoggingEvent(LoggingEvent logEvent)
         {
-            FireEvent(level, DateTime.Now, processName, subProcessName, logCategory, logMessage);
+            logEvent.DateTimeRouter = DateTime.Now;
+            FireEvent(logEvent);
         }
 
-        public void StatisticEvent(LoggerLibrary.DataContracts.Logger.StatisticType type, DateTime timeStamp, string processName, string subProcessName, string stasticCategory, string stasticName, object statisticValue)
+        public void StatisticEvent(StatisticEvent statEvent)
         {
-            FireEvent(type, DateTime.Now, processName, subProcessName, stasticCategory, stasticName, statisticValue);
+            statEvent.DateTimeRouter = DateTime.Now;
+            FireEvent(statEvent);
         }
 
-        public void CounterEvent(string processName, string subProcessName, string counterCategory, string counterName)
+        public void CounterEvent(CounterEvent countEvent)
         {
-            FireEvent(processName, subProcessName, counterCategory, counterName);
+            countEvent.DateTimeRouter = DateTime.Now;
+            FireEvent(countEvent);
         }
 
         #endregion

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ServiceModel;
-using LoggerLibrary;
-using LoggerLibrary.Helpers;
+using LoggerHostLibrary;
+using LoggerHostLibrary.ServiceContracts;
 using ServiceModelEx;
 
 namespace LoggerHostConsole

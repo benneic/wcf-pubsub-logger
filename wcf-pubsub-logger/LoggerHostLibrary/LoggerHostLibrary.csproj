@@ -7,8 +7,8 @@
     <ProjectGuid>{337E67A5-7E98-49E0-9CB7-F54BB3979E5B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LoggerLibrary</RootNamespace>
-    <AssemblyName>LoggerLibrary</AssemblyName>
+    <RootNamespace>LoggerHostLibrary</RootNamespace>
+    <AssemblyName>LoggerHostLibrary</AssemblyName>
     <ProjectTypeGuids>{3D9AD99F-2412-4246-B90B-4EAA41C64699};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <StartArguments>/client:"WcfTestClient.exe"</StartArguments>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -49,7 +49,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataContracts\Logger.cs" />
+    <Compile Include="DataContracts\CounterEvent.cs" />
+    <Compile Include="DataContracts\IEvent.cs" />
+    <Compile Include="DataContracts\LoggingEvent.cs" />
+    <Compile Include="DataContracts\StatisticEvent.cs" />
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="LoggerPublishService.cs" />
     <Compile Include="LoggerSubscriptionService.cs" />

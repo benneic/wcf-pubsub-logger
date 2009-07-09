@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.ServiceModel;
 using ServiceModelEx;
-using LoggerLibrary.ServiceContracts;
+using LoggerHostLibrary.ServiceContracts;
 
-namespace LoggerLibrary
+namespace LoggerHostLibrary
 {
     [ServiceBehavior(InstanceContextMode=InstanceContextMode.PerCall)]
     public class LoggerSubscriptionService : SubscriptionManager<ILogger>, ILoggerSubscriptionService

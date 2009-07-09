@@ -55,9 +55,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LoggerLibrary\LoggerLibrary.csproj">
+    <ProjectReference Include="..\LoggerHostLibrary\LoggerHostLibrary.csproj">
       <Project>{337E67A5-7E98-49E0-9CB7-F54BB3979E5B}</Project>
-      <Name>LoggerLibrary</Name>
+      <Name>LoggerHostLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="..\ServiceModelEx\ServiceModelEx.csproj">
       <Project>{0858C710-AF53-4049-B98E-CFE3638D1228}</Project>
