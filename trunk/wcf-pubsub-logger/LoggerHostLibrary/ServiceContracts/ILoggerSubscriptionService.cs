@@ -5,7 +5,7 @@ using System.Text;
 using System.ServiceModel;
 using ServiceModelEx;
 
-namespace LoggerLibrary.ServiceContracts
+namespace LoggerHostLibrary.ServiceContracts
 {
     [ServiceContract(CallbackContract = typeof(ILogger))]
     public interface ILoggerSubscriptionService : ISubscriptionService

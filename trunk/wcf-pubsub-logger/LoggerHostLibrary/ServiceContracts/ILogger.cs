@@ -4,20 +4,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using ServiceModelEx;
-using LoggerLibrary.DataContracts;
+using LoggerHostLibrary.DataContracts;
 
-namespace LoggerLibrary.ServiceContracts
+namespace LoggerHostLibrary.ServiceContracts
 {
     [ServiceContract]
     public interface ILogger
     {
         [OperationContract(IsOneWay = true)]
-        void LoggingEvent(LoggerLibrary.DataContracts.Logger.LogLevels level, DateTime timeStamp, string processName, string subProcessName, string logCategory, string logMessage);
+        void LoggingEvent(LoggingEvent logEvent);
 
         [OperationContract(IsOneWay = true)]
-        void StatisticEvent(LoggerLibrary.DataContracts.Logger.StatisticType type, DateTime timeStamp, string processName, string subProcessName, string stasticCategory, string stasticName, object statisticValue);
+        void StatisticEvent(StatisticEvent statEvent);
 
         [OperationContract(IsOneWay = true)]
-        void CounterEvent(string processName, string subProcessName, string counterCategory, string counterName);
+        void CounterEvent(CounterEvent countEvent);
     }   
 }
