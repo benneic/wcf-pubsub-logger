@@ -12,12 +12,12 @@ namespace LoggerLibrary.ServiceContracts
     public interface ILogger
     {
         [OperationContract(IsOneWay = true)]
-        void LoggingEvent(Logger.LogLevels level, DateTime timeStamp, string processName, string moduleName, string methodName, string details);
+        void LoggingEvent(LoggerLibrary.DataContracts.Logger.LogLevels level, DateTime timeStamp, string processName, string subProcessName, string logCategory, string logMessage);
 
         [OperationContract(IsOneWay = true)]
-        void StatisticEvent(Logger.StatisticType type, DateTime timeStamp, string processName, string moduleName, string stasticName, object statisticValue);
+        void StatisticEvent(LoggerLibrary.DataContracts.Logger.StatisticType type, DateTime timeStamp, string processName, string subProcessName, string stasticCategory, string stasticName, object statisticValue);
 
         [OperationContract(IsOneWay = true)]
-        void CounterEvent(string processName, string counterGroupName, string counterName);
+        void CounterEvent(string processName, string subProcessName, string counterCategory, string counterName);
     }   
 }

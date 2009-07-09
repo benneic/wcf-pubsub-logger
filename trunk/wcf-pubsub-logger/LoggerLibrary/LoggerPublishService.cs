@@ -11,22 +11,21 @@ namespace LoggerLibrary
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall)]
     public class LoggerPublishService : PublishService<ILogger> , ILogger
     {
-
         #region ILogger Members
 
-        public void LoggingEvent(LoggerLibrary.DataContracts.Logger.LogLevels level, DateTime timeStamp, string processName, string moduleName, string methodName, string details)
+        public void LoggingEvent(LoggerLibrary.DataContracts.Logger.LogLevels level, DateTime timeStamp, string processName, string subProcessName, string logCategory, string logMessage)
         {
-            FireEvent(level, timeStamp, processName, moduleName, methodName, details);
+            FireEvent(level, DateTime.Now, processName, subProcessName, logCategory, logMessage);
         }
 
-        public void StatisticEvent(LoggerLibrary.DataContracts.Logger.StatisticType type, DateTime timeStamp, string processName, string moduleName, string stasticName, object statisticValue)
+        public void StatisticEvent(LoggerLibrary.DataContracts.Logger.StatisticType type, DateTime timeStamp, string processName, string subProcessName, string stasticCategory, string stasticName, object statisticValue)
         {
-            FireEvent(type, timeStamp, processName, moduleName, stasticName, statisticValue);
+            FireEvent(type, DateTime.Now, processName, subProcessName, stasticCategory, stasticName, statisticValue);
         }
 
-        public void CounterEvent(string processName, string counterGroupName, string counterName)
+        public void CounterEvent(string processName, string subProcessName, string counterCategory, string counterName)
         {
-            FireEvent(processName, counterGroupName, counterName);
+            FireEvent(processName, subProcessName, counterCategory, counterName);
         }
 
         #endregion
