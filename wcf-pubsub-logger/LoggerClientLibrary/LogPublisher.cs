@@ -6,9 +6,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
+using System.ServiceModel.Channels;
 using LoggerClientLibrary.Collections.Generics;
 using LoggerClientLibrary.LoggerPublishService;
-using System.ServiceModel.Channels;
 
 namespace LoggerClientLibrary
 {
@@ -61,7 +61,7 @@ namespace LoggerClientLibrary
                 // Allow exception to be thrown
                 //try
                 {
-                    lock (m_LoggerClient)
+                    lock (m_ObjLock)
                     {
                         m_LoggerClient = new LoggerClient();
                         m_LoggerClient.Open();                        

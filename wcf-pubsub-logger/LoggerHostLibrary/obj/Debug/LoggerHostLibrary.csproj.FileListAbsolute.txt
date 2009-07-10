@@ -1,0 +1,8 @@
+E:\Development\AlgoBox\wcf-pubsub-logger\source\LoggerHostLibrary\bin\Debug\LoggerHostLibrary.dll.config
+E:\Development\AlgoBox\wcf-pubsub-logger\source\LoggerHostLibrary\bin\Debug\LoggerHostLibrary.dll
+E:\Development\AlgoBox\wcf-pubsub-logger\source\LoggerHostLibrary\bin\Debug\LoggerHostLibrary.pdb
+E:\Development\AlgoBox\wcf-pubsub-logger\source\LoggerHostLibrary\bin\Debug\ServiceModelEx.dll
+E:\Development\AlgoBox\wcf-pubsub-logger\source\LoggerHostLibrary\bin\Debug\ServiceModelEx.pdb
+E:\Development\AlgoBox\wcf-pubsub-logger\source\LoggerHostLibrary\obj\Debug\ResolveAssemblyReference.cache
+E:\Development\AlgoBox\wcf-pubsub-logger\source\LoggerHostLibrary\obj\Debug\LoggerHostLibrary.dll
+E:\Development\AlgoBox\wcf-pubsub-logger\source\LoggerHostLibrary\obj\Debug\LoggerHostLibrary.pdb
