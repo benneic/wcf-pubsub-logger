@@ -7,7 +7,7 @@ using ServiceModelEx;
 
 namespace LoggerHostLibrary.ServiceContracts
 {
-    [ServiceContract(CallbackContract = typeof(ILogger))]
+    [ServiceContract(CallbackContract = typeof(ILogger),Namespace = "http://algobox.net/PubSubLogger/2009/07")]
     public interface ILoggerSubscriptionService : ISubscriptionService
     { }
 }

@@ -8,16 +8,16 @@ using LoggerHostLibrary.DataContracts;
 
 namespace LoggerHostLibrary.ServiceContracts
 {
-    [ServiceContract]
+    [ServiceContract(Namespace = "http://algobox.net/PubSubLogger/2009/07")]
     public interface ILogger
     {
         [OperationContract(IsOneWay = true)]
-        void LoggingEvent(LoggingEvent logEvent);
+        void Log(LoggingEvent logEvent);
 
         [OperationContract(IsOneWay = true)]
-        void StatisticEvent(StatisticEvent statEvent);
+        void Statistic(StatisticEvent statEvent);
 
         [OperationContract(IsOneWay = true)]
-        void CounterEvent(CounterEvent countEvent);
+        void Counter(CounterEvent counterEvent);
     }   
 }
