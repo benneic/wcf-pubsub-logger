@@ -50,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataContracts\CounterEvent.cs" />
-    <Compile Include="DataContracts\IEvent.cs" />
+    <Compile Include="DataContracts\Event.cs" />
     <Compile Include="DataContracts\LoggingEvent.cs" />
     <Compile Include="DataContracts\StatisticEvent.cs" />
     <Compile Include="Helpers\Settings.cs" />

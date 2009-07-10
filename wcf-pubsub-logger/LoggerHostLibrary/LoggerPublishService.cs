@@ -9,27 +9,27 @@ using LoggerHostLibrary.DataContracts;
 
 namespace LoggerHostLibrary
 {
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall)]
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall, ConcurrencyMode = ConcurrencyMode.Multiple)]
     public class LoggerPublishService : PublishService<ILogger> , ILogger
     {
         #region ILogger Members
 
-        public void LoggingEvent(LoggingEvent logEvent)
+        public void Log(LoggingEvent logEvent)
         {
             logEvent.DateTimeRouter = DateTime.Now;
             FireEvent(logEvent);
         }
 
-        public void StatisticEvent(StatisticEvent statEvent)
+        public void Statistic(StatisticEvent statEvent)
         {
             statEvent.DateTimeRouter = DateTime.Now;
             FireEvent(statEvent);
         }
 
-        public void CounterEvent(CounterEvent countEvent)
+        public void Counter(CounterEvent counterEvent)
         {
-            countEvent.DateTimeRouter = DateTime.Now;
-            FireEvent(countEvent);
+            counterEvent.DateTimeRouter = DateTime.Now;
+            FireEvent(counterEvent);
         }
 
         #endregion

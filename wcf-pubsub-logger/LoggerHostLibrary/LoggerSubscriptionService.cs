@@ -8,7 +8,7 @@ using LoggerHostLibrary.ServiceContracts;
 
 namespace LoggerHostLibrary
 {
-    [ServiceBehavior(InstanceContextMode=InstanceContextMode.PerCall)]
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall, ConcurrencyMode = ConcurrencyMode.Multiple)]
     public class LoggerSubscriptionService : SubscriptionManager<ILogger>, ILoggerSubscriptionService
     {
     }
