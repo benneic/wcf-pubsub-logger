@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://algobox.net/PubSubLogger/2009/07" elementFormDefault="qualified" targetNamespace="http://algobox.net/PubSubLogger/2009/07" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://liqtest01.options-it.com/PubSubLogger/LoggerPublishService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/LoggerHostLibrary.DataContracts" />
+  <xs:element name="Log">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/LoggerHostLibrary.DataContracts" minOccurs="0" name="logEvent" nillable="true" type="q1:LoggingEvent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Statistic">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/LoggerHostLibrary.DataContracts" minOccurs="0" name="statEvent" nillable="true" type="q2:StatisticEvent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Counter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/LoggerHostLibrary.DataContracts" minOccurs="0" name="countEvent" nillable="true" type="q3:CounterEvent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

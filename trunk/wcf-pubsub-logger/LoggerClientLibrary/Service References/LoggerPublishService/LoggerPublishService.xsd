@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/LoggerHostLibrary.DataContracts" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/LoggerHostLibrary.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://liqtest01.options-it.com/PubSubLogger/LoggerPublishService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="LoggingEvent">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Event">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DateTimeSource" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LogCategory" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LogLevel" type="tns:LoggingEvent.LogLevels" />
+          <xs:element minOccurs="0" name="LogMessage" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LoggingEvent" nillable="true" type="tns:LoggingEvent" />
+  <xs:complexType name="Event">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DateTimeRouter" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ProcessName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubProcessName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Event" nillable="true" type="tns:Event" />
+  <xs:simpleType name="LoggingEvent.LogLevels">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Emergency">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Critical">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Error">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Important">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Informational">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Debug">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">6</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Trace">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">7</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="LoggingEvent.LogLevels" nillable="true" type="tns:LoggingEvent.LogLevels" />
+  <xs:complexType name="StatisticEvent">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Event">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DateTimeSource" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="StatisticCategory" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StatisticName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StatisticType" type="tns:StatisticEvent.StatisticTypes" />
+          <xs:element minOccurs="0" name="StatisticValueDouble" type="xs:double" />
+          <xs:element minOccurs="0" name="StatisticValueInt" type="xs:int" />
+          <xs:element minOccurs="0" name="StatisticValueString" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StatisticValueTimeSpan" type="ser:duration" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StatisticEvent" nillable="true" type="tns:StatisticEvent" />
+  <xs:simpleType name="StatisticEvent.StatisticTypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Integer" />
+      <xs:enumeration value="Double" />
+      <xs:enumeration value="TimeSpan" />
+      <xs:enumeration value="String" />
+      <xs:enumeration value="IntegerTimeSpan" />
+      <xs:enumeration value="DoubleTimeSpan" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="StatisticEvent.StatisticTypes" nillable="true" type="tns:StatisticEvent.StatisticTypes" />
+  <xs:complexType name="CounterEvent">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Event">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CounterCategory" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CounterName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CounterEvent" nillable="true" type="tns:CounterEvent" />
+</xs:schema>
