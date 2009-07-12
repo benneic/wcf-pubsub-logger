@@ -8,7 +8,9 @@
     <GenerateInternalTypes>false</GenerateInternalTypes>
     <GenerateMessageContracts>false</GenerateMessageContracts>
     <NamespaceMappings />
-    <CollectionMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
     <GenerateSerializableTypes>true</GenerateSerializableTypes>
     <Serializer>Auto</Serializer>
     <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
@@ -17,17 +19,17 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://liqtest01/PubSubLogger/LoggerSubscriptionService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost/PubSubLogger/LoggerSubscriptionService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="LoggerSubscriptionService.xsd" MetadataType="Schema" ID="1b095356-2f8d-4995-a3b8-90585271cc3c" SourceId="1" SourceUrl="http://liqtest01.options-it.com/PubSubLogger/LoggerSubscriptionService.svc?xsd=xsd1" />
-    <MetadataFile FileName="LoggerSubscriptionService.disco" MetadataType="Disco" ID="04a62ab0-885f-4f55-8b5e-67dcaeb98cf2" SourceId="1" SourceUrl="http://liqtest01.options-it.com/PubSubLogger/LoggerSubscriptionService.svc?disco" />
-    <MetadataFile FileName="LoggerSubscriptionService.wsdl" MetadataType="Wsdl" ID="849c6f6d-385a-4d7a-9c9b-fda332e956b5" SourceId="1" SourceUrl="http://liqtest01.options-it.com/PubSubLogger/LoggerSubscriptionService.svc?wsdl=wsdl1" />
-    <MetadataFile FileName="LoggerSubscriptionService1.wsdl" MetadataType="Wsdl" ID="899c37ae-b53a-4d03-a470-0fba79ae7e6e" SourceId="1" SourceUrl="http://liqtest01.options-it.com/PubSubLogger/LoggerSubscriptionService.svc?wsdl=wsdl0" />
-    <MetadataFile FileName="LoggerSubscriptionService1.xsd" MetadataType="Schema" ID="ba6d1df0-5e46-4280-847c-9b5058db8299" SourceId="1" SourceUrl="http://liqtest01.options-it.com/PubSubLogger/LoggerSubscriptionService.svc?xsd=xsd2" />
-    <MetadataFile FileName="LoggerSubscriptionService2.wsdl" MetadataType="Wsdl" ID="3e1fae7d-66f7-4e41-bb07-6376c0273cb0" SourceId="1" SourceUrl="http://liqtest01.options-it.com/PubSubLogger/LoggerSubscriptionService.svc?wsdl" />
-    <MetadataFile FileName="LoggerSubscriptionService2.xsd" MetadataType="Schema" ID="dafef551-99f8-40c8-a714-2e675541d717" SourceId="1" SourceUrl="http://liqtest01.options-it.com/PubSubLogger/LoggerSubscriptionService.svc?xsd=xsd3" />
-    <MetadataFile FileName="LoggerSubscriptionService3.xsd" MetadataType="Schema" ID="db7139e6-3c78-49ad-be8d-f4c928cb3a56" SourceId="1" SourceUrl="http://liqtest01.options-it.com/PubSubLogger/LoggerSubscriptionService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LoggerSubscriptionService3.wsdl" MetadataType="Wsdl" ID="442932f1-74a1-4f78-9c22-84d5ddff140c" SourceId="1" SourceUrl="http://win-6i8lv0wpor6/PubSubLogger/LoggerSubscriptionService.svc?wsdl" />
+    <MetadataFile FileName="LoggerSubscriptionService4.xsd" MetadataType="Schema" ID="6f957654-d348-4b4b-b5cc-6523df108dcb" SourceId="1" SourceUrl="http://win-6i8lv0wpor6/PubSubLogger/LoggerSubscriptionService.svc?xsd=xsd3" />
+    <MetadataFile FileName="LoggerSubscriptionService41.xsd" MetadataType="Schema" ID="28e5cc98-262a-4197-8c9f-fe80751691af" SourceId="1" SourceUrl="http://win-6i8lv0wpor6/PubSubLogger/LoggerSubscriptionService.svc?xsd=xsd1" />
+    <MetadataFile FileName="LoggerSubscriptionService31.wsdl" MetadataType="Wsdl" ID="f091050d-8903-4ecd-860d-a75c7d9158bf" SourceId="1" SourceUrl="http://win-6i8lv0wpor6/PubSubLogger/LoggerSubscriptionService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="LoggerSubscriptionService1.disco" MetadataType="Disco" ID="7eb32fab-23de-46c5-833a-169176753234" SourceId="1" SourceUrl="http://win-6i8lv0wpor6/PubSubLogger/LoggerSubscriptionService.svc?disco" />
+    <MetadataFile FileName="LoggerSubscriptionService42.xsd" MetadataType="Schema" ID="7015cbce-25f3-49e4-aa09-fec7f3be601a" SourceId="1" SourceUrl="http://win-6i8lv0wpor6/PubSubLogger/LoggerSubscriptionService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LoggerSubscriptionService43.xsd" MetadataType="Schema" ID="b57f4a17-54e5-4ae0-b8f4-990a8a068b7a" SourceId="1" SourceUrl="http://win-6i8lv0wpor6/PubSubLogger/LoggerSubscriptionService.svc?xsd=xsd2" />
+    <MetadataFile FileName="LoggerSubscriptionService32.wsdl" MetadataType="Wsdl" ID="2b29f3a2-6df7-43d1-9c5e-12b3a4472d04" SourceId="1" SourceUrl="http://win-6i8lv0wpor6/PubSubLogger/LoggerSubscriptionService.svc?wsdl=wsdl1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

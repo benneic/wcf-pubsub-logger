@@ -52,11 +52,12 @@ namespace LoggerClientLibrary
         {
             if (m_LoggerClient == null)
             {
-                lock (m_LoggerClient)
+                lock (m_ObjLock)
                 {
                     m_LoggerCallbackInstance = new InstanceContext(m_Logger);
                     m_LoggerClient = new LoggerSubscriptionServiceClient(m_LoggerCallbackInstance);
                     m_LoggerClient.Open();
+                    m_LoggerClient.Subscribe(String.Empty);
                 }
                 return true; 
             }

@@ -16,7 +16,9 @@ namespace LoggerHostConsole
             subscribing.Open();
             publishing.Open();
 
-            Console.WriteLine("Press any key to exit...");
+            LoggerSubscriptionService tester = new LoggerSubscriptionService();
+
+            Console.WriteLine("Press the Enter key to quit...");
             Console.ReadLine();
 
             publishing.Close();

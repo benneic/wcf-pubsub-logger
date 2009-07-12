@@ -8,3 +8,13 @@ E:\Development\AlgoBox\wcf-pubsub-logger\source\LoggerHostConsole\bin\Debug\Logg
 E:\Development\AlgoBox\wcf-pubsub-logger\source\LoggerHostConsole\obj\Debug\ResolveAssemblyReference.cache
 E:\Development\AlgoBox\wcf-pubsub-logger\source\LoggerHostConsole\obj\Debug\LoggerHostConsole.exe
 E:\Development\AlgoBox\wcf-pubsub-logger\source\LoggerHostConsole\obj\Debug\LoggerHostConsole.pdb
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerHostConsole\bin\Debug\LoggerHostConsole.exe.config
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerHostConsole\bin\Debug\LoggerHostConsole.exe
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerHostConsole\bin\Debug\LoggerHostConsole.pdb
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerHostConsole\bin\Debug\LoggerHostLibrary.dll
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerHostConsole\bin\Debug\ServiceModelEx.dll
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerHostConsole\bin\Debug\ServiceModelEx.pdb
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerHostConsole\bin\Debug\LoggerHostLibrary.pdb
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerHostConsole\obj\Debug\ResolveAssemblyReference.cache
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerHostConsole\obj\Debug\LoggerHostConsole.exe
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerHostConsole\obj\Debug\LoggerHostConsole.pdb

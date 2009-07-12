@@ -74,20 +74,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="AppMaster.config" />
-    <None Include="Service References\LoggerPublishService\LoggerPublishService.wsdl" />
-    <None Include="Service References\LoggerPublishService\LoggerPublishService.xsd" />
-    <None Include="Service References\LoggerPublishService\LoggerPublishService1.wsdl" />
-    <None Include="Service References\LoggerPublishService\LoggerPublishService1.xsd" />
-    <None Include="Service References\LoggerPublishService\LoggerPublishService2.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\LoggerPublishService\" />
     <WCFMetadataStorage Include="Service References\LoggerSubscriptionService\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\LoggerPublishService\LoggerPublishService.disco" />
-    <None Include="Service References\LoggerPublishService\LoggerPublishService2.xsd" />
-    <None Include="Service References\LoggerPublishService\LoggerPublishService3.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\LoggerPublishService\configuration91.svcinfo" />
@@ -100,16 +90,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService.xsd" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService.disco" />
-    <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService.wsdl" />
-    <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService1.wsdl" />
-    <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService1.xsd" />
-    <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService2.wsdl" />
-    <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService2.xsd" />
-    <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService3.xsd" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\LoggerSubscriptionService\configuration91.svcinfo" />
@@ -118,10 +98,30 @@
     <None Include="Service References\LoggerSubscriptionService\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService3.wsdl" />
+    <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService31.wsdl" />
+    <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService4.xsd" />
+    <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService41.xsd" />
     <None Include="Service References\LoggerSubscriptionService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LoggerPublishService\LoggerPublishService3.xsd" />
+    <None Include="Service References\LoggerPublishService\LoggerPublishService4.wsdl" />
+    <None Include="Service References\LoggerPublishService\LoggerPublishService41.wsdl" />
+    <None Include="Service References\LoggerPublishService\LoggerPublishService42.wsdl" />
+    <None Include="Service References\LoggerPublishService\LoggerPublishService43.wsdl" />
+    <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService1.disco" />
+    <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService32.wsdl" />
+    <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService42.xsd" />
+    <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService43.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LoggerPublishService\LoggerPublishService1.disco" />
+    <None Include="Service References\LoggerPublishService\LoggerPublishService31.xsd" />
+    <None Include="Service References\LoggerPublishService\LoggerPublishService32.xsd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

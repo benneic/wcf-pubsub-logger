@@ -52,19 +52,20 @@ namespace LoggerClientLibrary
 
         protected bool Open()
         {
-            if(m_LoggerClient == null)
+            if (m_LoggerClient == null)
             {
                 m_Events = new AutoResetEvent[2];
                 m_Events[THREAD_CONTINUE] = m_EventContinue;
                 m_Events[THREAD_EXIT] = m_EventExit;
 
                 // Allow exception to be thrown
-                //try
+                try
                 {
                     lock (m_ObjLock)
                     {
                         m_LoggerClient = new LoggerClient();
-                        m_LoggerClient.Open();                        
+
+                        m_LoggerClient.Open();
 
                         m_Thread = new Thread(new ThreadStart(ProcessThread));
                         m_Thread.Name = "PubSubLoggerClient";
@@ -73,10 +74,11 @@ namespace LoggerClientLibrary
                     }
                     return true;
                 }
-                //catch
-                //{
-                //    m_LoggerClient = null;
-                //}
+                finally
+                {
+                    System.Diagnostics.Debug.Assert(m_LoggerClient.State == System.ServiceModel.CommunicationState.Opened, "Could not connect to PubSubHost");
+                    m_LoggerClient = null;
+                }
             }
             return false;
         }
@@ -85,7 +87,7 @@ namespace LoggerClientLibrary
         {
             if (m_LoggerClient != null)
             {
-                lock (m_LoggerClient)
+                lock (m_ObjLock)
                 {
                     m_EventExit.Set();
                     ProcessQueue();
@@ -95,15 +97,12 @@ namespace LoggerClientLibrary
                         m_Thread.Abort();
                         m_Thread = null;
                     }
+                    if (m_LoggerClient.State == System.ServiceModel.CommunicationState.Opened)
+                    {
+                        m_LoggerClient.Close();
+                    }
+                    m_LoggerClient = null;
                 }
-            }
-            if (m_LoggerClient != null)
-            {
-                if (m_LoggerClient.State == System.ServiceModel.CommunicationState.Opened)
-                {
-                    m_LoggerClient.Close();
-                }
-                m_LoggerClient = null;
             }
 
             return false;
@@ -117,7 +116,16 @@ namespace LoggerClientLibrary
             while (isAlive)
             {
                 signalValue = WaitHandle.WaitAny(m_Events);
-                if (signalValue == THREAD_CONTINUE)
+
+                if (m_LoggerClient.State != System.ServiceModel.CommunicationState.Opened)
+                {
+                    isAlive = false;
+                    lock (m_ObjLock)
+                    {
+                        m_LoggerClient = null;
+                    }
+                }
+                else if (signalValue == THREAD_CONTINUE)
                 {
                     ProcessQueue();
                 }
@@ -141,7 +149,7 @@ namespace LoggerClientLibrary
                 else if (loggerEvent is StatisticEvent)
                 {
                     m_LoggerClient.Statistic((StatisticEvent)loggerEvent);
-                } 
+                }
                 else if (loggerEvent is CounterEvent)
                 {
                     m_LoggerClient.Counter((CounterEvent)loggerEvent);

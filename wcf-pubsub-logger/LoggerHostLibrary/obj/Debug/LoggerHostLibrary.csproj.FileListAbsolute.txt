@@ -6,3 +6,11 @@ E:\Development\AlgoBox\wcf-pubsub-logger\source\LoggerHostLibrary\bin\Debug\Serv
 E:\Development\AlgoBox\wcf-pubsub-logger\source\LoggerHostLibrary\obj\Debug\ResolveAssemblyReference.cache
 E:\Development\AlgoBox\wcf-pubsub-logger\source\LoggerHostLibrary\obj\Debug\LoggerHostLibrary.dll
 E:\Development\AlgoBox\wcf-pubsub-logger\source\LoggerHostLibrary\obj\Debug\LoggerHostLibrary.pdb
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerHostLibrary\bin\Debug\LoggerHostLibrary.dll.config
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerHostLibrary\bin\Debug\LoggerHostLibrary.dll
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerHostLibrary\bin\Debug\LoggerHostLibrary.pdb
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerHostLibrary\bin\Debug\ServiceModelEx.dll
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerHostLibrary\bin\Debug\ServiceModelEx.pdb
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerHostLibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerHostLibrary\obj\Debug\LoggerHostLibrary.dll
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerHostLibrary\obj\Debug\LoggerHostLibrary.pdb
