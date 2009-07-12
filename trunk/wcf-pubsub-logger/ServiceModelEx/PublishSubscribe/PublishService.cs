@@ -22,21 +22,25 @@ namespace ServiceModelEx
 
          FireEvent(methodName,args);
       }
-      static void FireEvent(string methodName,params object[] args)
+
+      protected static void FireEvent(string methodName,params object[] args)
       {
-         PublishPersistent(methodName,args);
+         //PublishPersistent(methodName,args);
          PublishTransient(methodName,args);
       }
+
       static void PublishPersistent(string methodName,params object[] args)
       {
          T[] subscribers = SubscriptionManager<T>.GetPersistentList(methodName);
          Publish(subscribers,true,methodName,args);
       }
+
       static void PublishTransient(string methodName,params object[] args)
       {
          T[] subscribers = SubscriptionManager<T>.GetTransientList(methodName);
          Publish(subscribers,false,methodName,args);
       }
+
       static void Publish(T[] subscribers,bool closeSubscribers,string methodName,params object[] args)
       {
          WaitCallback fire = (subscriber)=>
@@ -54,6 +58,7 @@ namespace ServiceModelEx
                              };
          subscribers.ForEach(queueUp);
       }
+
       static void Invoke(T subscriber,string methodName,object[] args)
       {
          Debug.Assert(subscriber != null);

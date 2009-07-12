@@ -15,13 +15,17 @@ namespace LoggerClientPublisherConsole
             TestPublisher.RunConsole();
         }
 
-
         private void RunConsole()
         {
-            LoggerClientLibrary.LogPublisher log = LoggerClientLibrary.LogPublisher.Logger;
 
-            Console.TreatControlCAsInput = true;
-            bool isActive = true;            
+            //Console.TreatControlCAsInput = true;
+            bool isActive = true;
+            int counter = 0;
+            while (isActive)
+            {
+                LogPublisher.Logger.Log(LoggerClientLibrary.LoggerPublishService.LoggingEvent.LogLevels.Important, "Test", "Test", "Test", "Test");
+            }
+
             while (isActive)
             {
                 LoggerClientLibrary.LoggerPublishService.LoggingEvent.LogLevels level = LoggerClientLibrary.LoggerPublishService.LoggingEvent.LogLevels.Important;
@@ -37,7 +41,7 @@ namespace LoggerClientPublisherConsole
                 string proceed = Console.ReadLine().ToUpper().Trim();
                 if (proceed == "Y")
                 {
-                    log.Log(level, processName, subProcessName, logCategory, logMessage);
+                    LogPublisher.Logger.Log(level, processName, subProcessName, logCategory, logMessage);
                 }
                 
             }

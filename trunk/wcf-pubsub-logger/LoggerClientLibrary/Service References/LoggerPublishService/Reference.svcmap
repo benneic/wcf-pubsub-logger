@@ -8,7 +8,9 @@
     <GenerateInternalTypes>false</GenerateInternalTypes>
     <GenerateMessageContracts>false</GenerateMessageContracts>
     <NamespaceMappings />
-    <CollectionMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
     <GenerateSerializableTypes>true</GenerateSerializableTypes>
     <Serializer>Auto</Serializer>
     <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
@@ -17,17 +19,17 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://liqtest01/PubSubLogger/LoggerPublishService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost/PubSubLogger/LoggerPublishService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="LoggerPublishService.xsd" MetadataType="Schema" ID="f54b797a-5faa-4044-9387-fdc62b3330c8" SourceId="1" SourceUrl="http://liqtest01.options-it.com/PubSubLogger/LoggerPublishService.svc?xsd=xsd2" />
-    <MetadataFile FileName="LoggerPublishService.wsdl" MetadataType="Wsdl" ID="3f586286-9155-437e-acc9-3b006b1febe3" SourceId="1" SourceUrl="http://liqtest01.options-it.com/PubSubLogger/LoggerPublishService.svc?wsdl=wsdl2" />
-    <MetadataFile FileName="LoggerPublishService1.wsdl" MetadataType="Wsdl" ID="3895d024-2aff-4acd-ab61-f72d9165f55b" SourceId="1" SourceUrl="http://liqtest01.options-it.com/PubSubLogger/LoggerPublishService.svc?wsdl=wsdl0" />
-    <MetadataFile FileName="LoggerPublishService1.xsd" MetadataType="Schema" ID="8b9fa832-0e3b-4bd0-9bbc-bf7b1313e23b" SourceId="1" SourceUrl="http://liqtest01.options-it.com/PubSubLogger/LoggerPublishService.svc?xsd=xsd1" />
-    <MetadataFile FileName="LoggerPublishService2.wsdl" MetadataType="Wsdl" ID="6b9ccc19-4499-4c95-a716-5fceec92e860" SourceId="1" SourceUrl="http://liqtest01.options-it.com/PubSubLogger/LoggerPublishService.svc?wsdl=wsdl1" />
-    <MetadataFile FileName="LoggerPublishService.disco" MetadataType="Disco" ID="c0b873d0-0ff6-41b5-a1b5-1215291348cc" SourceId="1" SourceUrl="http://liqtest01.options-it.com/PubSubLogger/LoggerPublishService.svc?disco" />
-    <MetadataFile FileName="LoggerPublishService2.xsd" MetadataType="Schema" ID="6fbf5f03-569c-44af-9ae9-2f8642f99525" SourceId="1" SourceUrl="http://liqtest01.options-it.com/PubSubLogger/LoggerPublishService.svc?xsd=xsd0" />
-    <MetadataFile FileName="LoggerPublishService3.wsdl" MetadataType="Wsdl" ID="871f3cdd-32be-4a27-9f19-22533f5b3249" SourceId="1" SourceUrl="http://liqtest01.options-it.com/PubSubLogger/LoggerPublishService.svc?wsdl" />
+    <MetadataFile FileName="LoggerPublishService3.xsd" MetadataType="Schema" ID="6dd1675c-24ac-42bf-8177-07a1eeb67d9b" SourceId="1" SourceUrl="http://win-6i8lv0wpor6/PubSubLogger/LoggerPublishService.svc?xsd=xsd1" />
+    <MetadataFile FileName="LoggerPublishService4.wsdl" MetadataType="Wsdl" ID="b01dce08-38e0-4086-a14a-7d3a4ea06665" SourceId="1" SourceUrl="http://win-6i8lv0wpor6/PubSubLogger/LoggerPublishService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="LoggerPublishService41.wsdl" MetadataType="Wsdl" ID="41f4f7da-5e65-47b1-a293-5e62e0b6a347" SourceId="1" SourceUrl="http://win-6i8lv0wpor6/PubSubLogger/LoggerPublishService.svc?wsdl=wsdl1" />
+    <MetadataFile FileName="LoggerPublishService42.wsdl" MetadataType="Wsdl" ID="ac76fcd8-afd8-41dd-99e7-686257cd1ed6" SourceId="1" SourceUrl="http://win-6i8lv0wpor6/PubSubLogger/LoggerPublishService.svc?wsdl=wsdl2" />
+    <MetadataFile FileName="LoggerPublishService43.wsdl" MetadataType="Wsdl" ID="47daf0fa-ce5c-4f85-a123-b62768c22c43" SourceId="1" SourceUrl="http://win-6i8lv0wpor6/PubSubLogger/LoggerPublishService.svc?wsdl" />
+    <MetadataFile FileName="LoggerPublishService1.disco" MetadataType="Disco" ID="408b76ea-80cb-41c1-97bf-c7d732ab91d1" SourceId="1" SourceUrl="http://win-6i8lv0wpor6/PubSubLogger/LoggerPublishService.svc?disco" />
+    <MetadataFile FileName="LoggerPublishService31.xsd" MetadataType="Schema" ID="2ef0d4a2-26eb-4a87-ae1c-1bf15c2866ee" SourceId="1" SourceUrl="http://win-6i8lv0wpor6/PubSubLogger/LoggerPublishService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LoggerPublishService32.xsd" MetadataType="Schema" ID="819cdc6f-704a-4594-bdf3-a1054d3ded23" SourceId="1" SourceUrl="http://win-6i8lv0wpor6/PubSubLogger/LoggerPublishService.svc?xsd=xsd2" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
