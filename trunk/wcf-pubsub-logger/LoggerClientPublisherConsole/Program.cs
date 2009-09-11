@@ -43,6 +43,10 @@ namespace LoggerClientPublisherConsole
                 {
                     LogPublisher.Logger.Log(level, processName, subProcessName, logCategory, logMessage);
                 }
+                else if (proceed != "N")
+                {
+                    isActive = false;
+                }
                 
             }
         }

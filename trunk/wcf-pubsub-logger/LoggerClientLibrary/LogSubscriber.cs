@@ -50,6 +50,7 @@ namespace LoggerClientLibrary
 
         protected bool Open()
         {
+            
             if (m_LoggerClient == null)
             {
                 lock (m_ObjLock)
