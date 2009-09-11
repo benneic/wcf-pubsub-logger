@@ -33,8 +33,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerClientLibrary", "Logg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerClientPublisherConsole", "LoggerClientPublisherConsole\LoggerClientPublisherConsole.csproj", "{FFF57B0B-4E89-4F82-9F2D-41264701CD11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerClientSubscriptionConsole", "LoggerClientSubscriptionConsole\LoggerClientSubscriptionConsole.csproj", "{0B498417-DB0E-448B-B8BA-952846D27914}"
-EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -82,12 +80,6 @@ Global
 		{FFF57B0B-4E89-4F82-9F2D-41264701CD11}.Design|Any CPU.Build.0 = Debug|Any CPU
 		{FFF57B0B-4E89-4F82-9F2D-41264701CD11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFF57B0B-4E89-4F82-9F2D-41264701CD11}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0B498417-DB0E-448B-B8BA-952846D27914}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B498417-DB0E-448B-B8BA-952846D27914}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B498417-DB0E-448B-B8BA-952846D27914}.Design|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B498417-DB0E-448B-B8BA-952846D27914}.Design|Any CPU.Build.0 = Debug|Any CPU
-		{0B498417-DB0E-448B-B8BA-952846D27914}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B498417-DB0E-448B-B8BA-952846D27914}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
