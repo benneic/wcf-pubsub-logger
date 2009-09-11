@@ -11,3 +11,16 @@ D:\Development\AlgoBox\wcf-pubsub-logger\ServiceModelEx\obj\Debug\ServiceModelEx
 D:\Development\AlgoBox\wcf-pubsub-logger\ServiceModelEx\obj\Debug\ServiceModelEx.csproj.GenerateResource.Cache
 D:\Development\AlgoBox\wcf-pubsub-logger\ServiceModelEx\obj\Debug\ServiceModelEx.dll
 D:\Development\AlgoBox\wcf-pubsub-logger\ServiceModelEx\obj\Debug\ServiceModelEx.pdb
+E:\Development\AlgoBox\wcf-pubsub-logger\source\ServiceModelEx\bin\Debug\ServiceModelEx.dll.config
+E:\Development\AlgoBox\wcf-pubsub-logger\source\ServiceModelEx\bin\Debug\ServiceModelEx.dll
+E:\Development\AlgoBox\wcf-pubsub-logger\source\ServiceModelEx\bin\Debug\ServiceModelEx.pdb
+E:\Development\AlgoBox\wcf-pubsub-logger\source\ServiceModelEx\obj\Debug\ResolveAssemblyReference.cache
+E:\Development\AlgoBox\wcf-pubsub-logger\source\ServiceModelEx\obj\Debug\ServiceModelEx.SafeButton.resources
+E:\Development\AlgoBox\wcf-pubsub-logger\source\ServiceModelEx\obj\Debug\ServiceModelEx.SafeListBox.resources
+E:\Development\AlgoBox\wcf-pubsub-logger\source\ServiceModelEx\obj\Debug\ServiceModelEx.SafeProgressBar.resources
+E:\Development\AlgoBox\wcf-pubsub-logger\source\ServiceModelEx\obj\Debug\ServiceModelEx.SafeStatusBar.resources
+E:\Development\AlgoBox\wcf-pubsub-logger\source\ServiceModelEx\obj\Debug\ServiceModelEx.SafeTextBox.resources
+E:\Development\AlgoBox\wcf-pubsub-logger\source\ServiceModelEx\obj\Debug\ServiceModelEx.SafeTrackBar.resources
+E:\Development\AlgoBox\wcf-pubsub-logger\source\ServiceModelEx\obj\Debug\ServiceModelEx.csproj.GenerateResource.Cache
+E:\Development\AlgoBox\wcf-pubsub-logger\source\ServiceModelEx\obj\Debug\ServiceModelEx.dll
+E:\Development\AlgoBox\wcf-pubsub-logger\source\ServiceModelEx\obj\Debug\ServiceModelEx.pdb
