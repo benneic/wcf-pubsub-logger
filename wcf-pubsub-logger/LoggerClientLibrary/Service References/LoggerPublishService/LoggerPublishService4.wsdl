@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://algobox.net/PubSubLogger/2009/07" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://algobox.net/PubSubLogger/2009/07" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://algobox.net/PubSubLogger/2009/07/Imports">
+      <xsd:import schemaLocation="http://win-6i8lv0wpor6/PubSubLogger/LoggerPublishService.svc?xsd=xsd0" namespace="http://algobox.net/PubSubLogger/2009/07" />
+      <xsd:import schemaLocation="http://win-6i8lv0wpor6/PubSubLogger/LoggerPublishService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://win-6i8lv0wpor6/PubSubLogger/LoggerPublishService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/LoggerHostLibrary.DataContracts" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILogger_Log_InputMessage">
+    <wsdl:part name="parameters" element="tns:Log" />
+  </wsdl:message>
+  <wsdl:message name="ILogger_Statistic_InputMessage">
+    <wsdl:part name="parameters" element="tns:Statistic" />
+  </wsdl:message>
+  <wsdl:message name="ILogger_Counter_InputMessage">
+    <wsdl:part name="parameters" element="tns:Counter" />
+  </wsdl:message>
+  <wsdl:portType name="ILogger">
+    <wsdl:operation name="Log">
+      <wsdl:input wsaw:Action="http://algobox.net/PubSubLogger/2009/07/ILogger/Log" message="tns:ILogger_Log_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Statistic">
+      <wsdl:input wsaw:Action="http://algobox.net/PubSubLogger/2009/07/ILogger/Statistic" message="tns:ILogger_Statistic_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Counter">
+      <wsdl:input wsaw:Action="http://algobox.net/PubSubLogger/2009/07/ILogger/Counter" message="tns:ILogger_Counter_InputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

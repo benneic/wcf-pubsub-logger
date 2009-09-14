@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://tempuri.org/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:i1="http://algobox.net/PubSubLogger/LogPublisher" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:i0="http://algobox.net/LoggerService/LogPublisher" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="LoggerPublishService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://algobox.net/LoggerService/LogPublisher" location="http://win-6i8lv0wpor6/PubSubLogger/LoggerPublishService.svc?wsdl=wsdl1" />
+  <wsdl:import namespace="http://algobox.net/PubSubLogger/LogPublisher" location="http://win-6i8lv0wpor6/PubSubLogger/LoggerPublishService.svc?wsdl=wsdl2" />
+  <wsdl:types />
+  <wsdl:service name="LoggerPublishService">
+    <wsdl:port name="wsLogPublisher" binding="i0:wsLogPublisher">
+      <soap12:address location="http://win-6i8lv0wpor6/PubSubLogger/LoggerPublishService.svc/wsLogPublisher" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://win-6i8lv0wpor6/PubSubLogger/LoggerPublishService.svc/wsLogPublisher</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="tcpLogPublisher" binding="i1:tcpLogPublisher">
+      <soap12:address location="net.tcp://localhost/PubSubLogger/tcpLogPublisher" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost/PubSubLogger/tcpLogPublisher</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="pipeLogPublisher" binding="i1:pipeLogPublisher">
+      <soap12:address location="net.pipe://localhost/PubSubLogger/pipeLogPublisher" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.pipe://localhost/PubSubLogger/pipeLogPublisher</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
