@@ -1,0 +1,8 @@
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerClientSubscriptionConsole\bin\Debug\LoggerClientSubscriptionConsole.exe.config
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerClientSubscriptionConsole\bin\Debug\LoggerClientSubscriptionConsole.exe
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerClientSubscriptionConsole\bin\Debug\LoggerClientSubscriptionConsole.pdb
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerClientSubscriptionConsole\bin\Debug\LoggerClientLibrary.dll
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerClientSubscriptionConsole\bin\Debug\LoggerClientLibrary.pdb
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerClientSubscriptionConsole\obj\Debug\ResolveAssemblyReference.cache
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerClientSubscriptionConsole\obj\Debug\LoggerClientSubscriptionConsole.exe
+D:\Development\AlgoBox\wcf-pubsub-logger\LoggerClientSubscriptionConsole\obj\Debug\LoggerClientSubscriptionConsole.pdb
