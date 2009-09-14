@@ -77,7 +77,6 @@ namespace LoggerClientLibrary
                 finally
                 {
                     System.Diagnostics.Debug.Assert(m_LoggerClient.State == System.ServiceModel.CommunicationState.Opened, "Could not connect to PubSubHost");
-                    m_LoggerClient = null;
                 }
             }
             return false;
@@ -110,6 +109,9 @@ namespace LoggerClientLibrary
 
         protected void ProcessThread()
         {
+            if (m_LoggerClient == null)
+                return;
+
             bool isAlive = true;
             int signalValue;
 

@@ -21,11 +21,17 @@ namespace LoggerClientPublisherConsole
             //Console.TreatControlCAsInput = true;
             bool isActive = true;
             int counter = 0;
+ 
             while (isActive)
             {
-                LogPublisher.Logger.Log(LoggerClientLibrary.LoggerPublishService.LoggingEvent.LogLevels.Important, "Test", "Test", "Test", "Test");
+                while (++counter < 10000)
+                {
+                    LogPublisher.Logger.Log(LoggerClientLibrary.LoggerPublishService.LoggingEvent.LogLevels.Important, "Test", "Test", "Test", "Test");
+                }
+                System.Threading.Thread.Sleep(10000);
+                Console.Write("Published 10000 messages, sleeping...");
+                counter = 0;
             }
-
             while (isActive)
             {
                 LoggerClientLibrary.LoggerPublishService.LoggingEvent.LogLevels level = LoggerClientLibrary.LoggerPublishService.LoggingEvent.LogLevels.Important;

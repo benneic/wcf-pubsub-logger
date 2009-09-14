@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="MmL6viJlAOETt70gP8LUjCs6bio=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="shvvsDOjZgw7hOUbNOi/nEAWe6w=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="netNamedPipeBinding" name="pipeLogPublisher">
       <properties>
@@ -291,10 +291,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="wsLogPublisher" contract="LoggerPublishService.ILogger" bindingType="wsHttpBinding" address="http://win-6i8lv0wpor6/PubSubLogger/LoggerPublishService.svc/wsLogPublisher" bindingConfiguration="wsLogPublisher">
+    <endpoint name="wsLogPublisher" contract="LoggerPublishService.ILogger" bindingType="wsHttpBinding" address="http://liqtest02.options-it.com/PubSubLogger/LoggerPublishService.svc/wsLogPublisher" bindingConfiguration="wsLogPublisher">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://win-6i8lv0wpor6/PubSubLogger/LoggerPublishService.svc/wsLogPublisher</serializedValue>
+          <serializedValue>http://liqtest02.options-it.com/PubSubLogger/LoggerPublishService.svc/wsLogPublisher</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
