@@ -108,20 +108,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\LoggerPublishService\LoggerPublishService3.xsd" />
-    <None Include="Service References\LoggerPublishService\LoggerPublishService4.wsdl" />
-    <None Include="Service References\LoggerPublishService\LoggerPublishService41.wsdl" />
-    <None Include="Service References\LoggerPublishService\LoggerPublishService42.wsdl" />
-    <None Include="Service References\LoggerPublishService\LoggerPublishService43.wsdl" />
+    <None Include="Service References\LoggerPublishService\LoggerPublishService.wsdl" />
+    <None Include="Service References\LoggerPublishService\LoggerPublishService.xsd" />
+    <None Include="Service References\LoggerPublishService\LoggerPublishService1.wsdl" />
+    <None Include="Service References\LoggerPublishService\LoggerPublishService1.xsd" />
+    <None Include="Service References\LoggerPublishService\LoggerPublishService2.wsdl" />
+    <None Include="Service References\LoggerPublishService\LoggerPublishService3.wsdl" />
     <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService1.disco" />
     <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService32.wsdl" />
     <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService42.xsd" />
     <None Include="Service References\LoggerSubscriptionService\LoggerSubscriptionService43.xsd" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\LoggerPublishService\LoggerPublishService1.disco" />
-    <None Include="Service References\LoggerPublishService\LoggerPublishService31.xsd" />
-    <None Include="Service References\LoggerPublishService\LoggerPublishService32.xsd" />
+    <None Include="Service References\LoggerPublishService\LoggerPublishService.disco" />
+    <None Include="Service References\LoggerPublishService\LoggerPublishService2.xsd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
