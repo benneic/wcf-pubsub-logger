@@ -1,0 +1,3 @@
+Written in C# .NET utilising the Microsoft Windows Communication Foundation framework, wcf-pubsub-logger is designed to provide an easy to use interface for disseminating logging information from any number of components and services over a networked environment.
+
+Providing support for TCP, Named Pipes, MSMQ and HTTP means that many types of services can publish log messages, stastics or counters to the centralised PubSubLogger router who manages sending those message to those subscribers who wish to receive them, be it a database writer, console application or any subscriber that would want to display or store such messages.
